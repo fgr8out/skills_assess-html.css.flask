@@ -1,0 +1,28 @@
+/*Your styles can go here.*/
+input, select{
+    background-color: #F7FE2E;
+}
+
+div{
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-style: black;
+    border-left-style: black;
+}
+
+h3{
+    font-family: sans-serif;
+}
+.last{
+    font-weight:bold;
+}
