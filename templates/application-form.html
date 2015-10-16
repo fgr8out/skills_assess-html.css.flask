@@ -12,12 +12,16 @@
             <h3>Congratulations! You have tentatively been offered a position with the Ubermelon engineering team.<br>We have a few positions available all with comparable starting salaries.</h3>
             <h3>Please fill out the introductory form below.</h3> 
         </div>
-        <form action="/application">
-            <label>First Name <input type="text" name="First Name"></label><br><br>
-            <label>Last Name <input id="last" type="text" name="Last Name"></label><br><br>
+
+        <form action="/response">
+            <label>First Name <input type="text" name="firstname"></label><br><br>
+
+            <label>Last Name <input id="last" type="text" name="lastname"></label><br><br>
+
             <label>Salary Requirement $<input type="text" name="currency" min="1" max="99999"></label><br><br>
+
                 <label>Job Title </label><br>
-                <select name="Career Options">
+                <select name="careeroptions">
                 <option value="Software Engineer">Software Engineer</option>
                 <option value="QA Engineer">QA Engineer</option>
                 <option value="Product Manager">Product Manager</option>

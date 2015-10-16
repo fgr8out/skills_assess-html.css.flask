@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -15,13 +15,17 @@ def job_form():
 
 @app.route('/response')
 def app_response():
-    f.name = request.args.get("First_Name")
-    l.name = request.args.get("Last_Name")
-    job_chosen = request.args.get("Job_Title")
-    sal_amount = request.args.get("Salary")
+    firstname = request.args.get("firstname")
+    print firstname
+    lastname = request.args.get("lastname")
+    print lastname
+    job_chosen = request.args.get("careeroptions")
+    print job_chosen
+    sal_amount = request.args.get("currency")
+    print sal_amount
 
-    return render_template("application-response.html", First_Name=f.name, 
-            Last_Name=l.name, Job_Title=job_chosen, Salary=sal_amount)
+    return render_template("application-response.html", First_Name=firstname, 
+            Last_Name=lastname, Job_Title=job_chosen, Salary=sal_amount)
 
     # return "<html><body>This is the homepage.</body></html>"
 
